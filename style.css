@@ -5,13 +5,13 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Asap', sans-serif;
 }
 
 .hero {
   min-height: 100vh;
-  background-color: #8b7f71;  /* classic coffee brown */
-  color: #f5ede3;             /* soft cream */
+  background-color: #002731;  
+  color: #f5ede3;          
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -21,9 +21,17 @@ body {
 /* Top layout */
 .top-bar {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
+}
+
+.name-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
 .top-buttons {
@@ -34,39 +42,30 @@ body {
 }
 
 
-/* Absurd name */
-h1 {
+.main-title {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(6rem, 14vw, 13rem);
+  font-size: clamp(2.5rem, 3rem, 3.5rem);
   line-height: 0.9;
+  text-align: center;
 }
 
-/* Description under name */
-.description {
-  margin-top: 40px;           /* push it down */
-  font-size: 2rem;        /* make it bigger */
+.main-description {
+  margin-top: 40px;          
+  font-size: 1.2rem;       
   line-height: 1.7;
   opacity: 0.9;
-  max-width: 70%;           /* allow full width */
+  max-width: 45%;  
+  text-align: center;       
 }
 
-/* Projects button */
-.projects-btn {
+.sub-description {
+  margin-top: 18px;
   font-size: 1.5rem;
-  letter-spacing: 4px;
-  text-decoration: none;
-  color: #f5f1e6;
-  border: 2px solid #f5f1e6;
-  padding: 14px 32px;
-  transition: all 0.2s ease;
+  opacity: 0.9;
+  text-align: center;
 }
 
-.projects-btn:hover {
-  background: #f5f1e6;
-  color: #5a5a40;
-}
 
-/* Footer */
 footer {
   border-top: 1px solid rgba(245,241,230,0.3);
   padding-top: 25px;
@@ -85,25 +84,36 @@ footer {
 
 .contact {
   display: flex;
-  gap: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
   align-items: center;
+  justify-content: center;
   font-size: 1rem;
+  text-align: center;
+  margin-top: 24px;
+  font-size: 1.1rem;
+}
+
+.contact .highlight {
+  color: #7df9ff;
+  font-weight: 650;
 }
 
 .contact a {
-  color: #f5f1e6;
-  font-size: 1.5rem;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  color: inherit;
+  font-weight: 400;
+  text-decoration: none;
 }
 
-.contact a:hover {
-  opacity: 0.7;
-  transform: translateY(-2px);
+.contact .support {
+  transition: color 0.2s ease;
 }
 
-/* ========================= */
-/* Projects Page Styling */
-/* ========================= */
+.contact:hover .support {
+  color: #2ecc71;
+}
+
 
 .projects-page {
   min-height: 100vh;
