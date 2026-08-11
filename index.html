@@ -2,22 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chingis Toktamyssov</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-
-  <!-- Proper Font Awesome CDN (works without account) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Karla:wght@300..600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="hero">
 
-    <div class="top-bar">
+    <div class="top-bar intro-band">
       <div class="name-section">
         <div class = "main-title">
-          Chingis Toktamyssov | Computer Engineer
+          Chingis Toktamyssov
         </div>
 
         <div class = "main-description">
@@ -25,23 +21,114 @@
         </div>
 
         <div class = "sub-description">
-          Interested in computers or electronics? Let's talk.
+          Software Dev @ PSC
         </div>
 
-        <div class="contact">
-          <span>email: <span class="highlight">ctoktamyssov@gmail.com</span></span>
-          <a href="https://github.com/ctoktamyssov" target="_blank">GitHub: <span class="highlight">@ctoktamyssov</span></a>
+        <div class="intro-links">
+          <span class="intro-link">
+            <span class="label">email:</span> <span class="value">ctoktamyssov@gmail.com</span>
+          </span>
+          <a class="intro-link" href="https://github.com/ctoktamyssov" target="_blank">
+            <span class="label">GitHub:</span> <span class="value">@ctoktamyssov</span>
+          </a>
+          <a class="intro-link" href="https://drive.google.com/file/d/1gzZzoqg-A7Xp1GML0GNVj7TxBQT6ZjqG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <span class="label">resume</span>
+          </a>
         </div>
 
         </div>
 
     </div>
 
-    <footer></footer>
+    <section class="projects-section">
+    <div class="project-grid">
 
+      <div class="project-card">
+        <h3 class="card-title">8-Bit Breadboard Computer</h3>
+        <div class="card-image"><img src="images/breadboard%20computer.jpg" alt="8-bit breadboard computer"></div>
+        <p class="card-description">A fully programmable 8-bit computer built from 74HC-series logic chips — a clock module, registers, ALU, RAM, program counter, and output register sharing one data bus. A 28C16 EEPROM control unit decodes a custom instruction set (LDA, ADD, SUB, JMP, OUT, HLT), and it runs assembly like a Fibonacci generator on real hardware.</p>
+        <div class="card-tags">
+          <span>74HC Logic</span>
+          <span>EEPROM</span>
+          <span>Assembly</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3 class="card-title">Rubik's Cube Solver</h3>
+        <div class="card-image"><img src="images/rubiks%20cube%20solver.jpg" alt="Rubik's cube solving robot"></div>
+        <p class="card-description">A full-stack cube solving robot: a React frontend and a Node.js + Express backend compute the solution with cubejs, then send it over USB serial to an ESP32 that drives the stepper motors turning the cube.</p>
+        <div class="card-tags">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>ESP32</span>
+          <span>Steppers</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/ctoktamyssov/rubiks_cube_solver" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://drive.google.com/file/d/1zAR-LPOthzfEVImlLhEOR-Ip4IfvNw5c/view?usp=sharing" target="_blank" rel="noopener noreferrer">Video</a>
+          <a href="https://docs.google.com/document/d/1nBzKu9QHff4eIySCtoNJgGj-JBjPcbIqJFHOU771WNM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Schematics</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3 class="card-title">Digital Clock</h3>
+        <div class="card-image"><img src="images/digital%20clock.jpg" alt="Digital clock"></div>
+        <p class="card-description">Built from plywood, 3D printed parts, and a custom designed PCB, running on an Arduino Nano. The art is inspired by Arcane and was drawn by a friend.</p>
+        <div class="card-tags">
+          <span>Arduino</span>
+          <span>PCB Design</span>
+          <span>3D Printing</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/ctoktamyssov/digital_clock" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://drive.google.com/file/d/1e4N4mx3wFzttojGlbdqcNeg2y8XK5sM1/view?usp=sharing" target="_blank" rel="noopener noreferrer">Video</a>
+          <a href="https://docs.google.com/document/d/1VeNW5qagfk8xEb60XSy2GAAW5ZK0mnCc/edit?usp=sharing&ouid=114861078041327295778&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Schematics</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3 class="card-title">Three Body Problem</h3>
+        <div class="card-image"><img src="images/three%20body%20problem.jpg" alt="Three body problem simulation"></div>
+        <p class="card-description">Simulates the three body problem in real time with C++ and OpenGL, using RK4 integration for accurate physics and GLM for vector math. A visualization of the orbital system from Cixin Liu's book series.</p>
+        <div class="card-tags">
+          <span>C++</span>
+          <span>OpenGL</span>
+          <span>RK4</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/ctoktamyssov/three_body_problem" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://drive.google.com/file/d/1Gw_7YKFW8ctkFr8I1gRy2HFd4c-EoUCs/view?usp=sharing" target="_blank" rel="noopener noreferrer">Video</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3 class="card-title">Card Detection</h3>
+        <div class="card-image"><img src="images/card%20detection.jpg" alt="Playing card detection"></div>
+        <p class="card-description">Real-time playing card classification built on a pretrained PyTorch model, fine-tuned on a Kaggle dataset and wired to OpenCV for live webcam detection.</p>
+        <div class="card-tags">
+          <span>Python</span>
+          <span>PyTorch</span>
+          <span>OpenCV</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/ctoktamyssov/card_detection" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://drive.google.com/file/d/1us6KKv1geNTeIw_kDDLd7dTMRQkJaKPn/view?usp=sharing" target="_blank" rel="noopener noreferrer">Video</a>
+        </div>
+      </div>
+
+    </div>
+    </section>
+
+    <footer>
       <div class="contact">
-        <span> <span class="support">email:</span> <span class="highlight">ctoktamyssov@gmail.com</span></span>
-        <a href="https://github.com/ctoktamyssov" target="_blank"><span class="support">GitHub:</span> <span class="highlight">@ctoktamyssov</span></a>
+        <span class="intro-link">
+          <span class="label">email:</span> <span class="value">ctoktamyssov@gmail.com</span>
+        </span>
+        <span class="separator">&middot;</span>
+        <a class="intro-link" href="https://github.com/ctoktamyssov" target="_blank">
+          <span class="label">GitHub:</span> <span class="value">@ctoktamyssov</span>
+        </a>
       </div>
     </footer>
 
