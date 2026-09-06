@@ -17,7 +17,7 @@
         </div>
 
         <div class = "main-description">
-          I'm a computer engineering student at the University of Ottawa. With a deep passion for electrical engineering and programming, I like to build robots.
+          Hi, I'm a computer engineering student at the University of Ottawa. I'm passionate about building cool things!
         </div>
 
         <div class = "sub-description">
@@ -31,7 +31,7 @@
           <a class="intro-link" href="https://github.com/ctoktamyssov" target="_blank">
             <span class="label">GitHub:</span> <span class="value">@ctoktamyssov</span>
           </a>
-          <a class="intro-link" href="https://drive.google.com/file/d/1gzZzoqg-A7Xp1GML0GNVj7TxBQT6ZjqG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a class="intro-link" href="https://drive.google.com/file/d/1ASrRDMgwucI4UbeW8O7IdGBGbTvkndgn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <span class="label">resume</span>
           </a>
         </div>
@@ -46,18 +46,31 @@
       <div class="project-card">
         <h3 class="card-title">8-Bit Breadboard Computer</h3>
         <div class="card-image"><img src="images/8 bit computer.jpg" alt="8-bit breadboard computer"></div>
-        <p class="card-description">A fully programmable 8-bit computer built from 74HC-series logic chips — a clock module, registers, ALU, RAM, program counter, and output register sharing one data bus. A 28C16 EEPROM control unit decodes a custom instruction set (LDA, ADD, SUB, JMP, OUT, HLT), and it runs assembly like a Fibonacci generator on real hardware.</p>
+        <p class="card-description">A fully programmable 8-bit computer. It contains a clock module, registers, ALU, RAM, and a CPU. 
+          The CPU is an EEPROM which decodes an assembly-type instruction set:<br>
+          LDA = load register A, <br>
+          ADD = add number in memory XXXX to A, <br>
+          HLT = stop the clock, <br>
+          and many more. The most complex program that I have programmed and ran on the machine is 
+          a Fibonacci sequence generator which is demonstrated in the attached video.</p>
         <div class="card-tags">
+          <span>Computer Architecture</span>
           <span>74HC Logic</span>
-          <span>EEPROM</span>
           <span>Assembly</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/ctoktamyssov/8_bit_computer" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://drive.google.com/file/d/1aPeNUB4X955Le4NvIWuauu33XxGksF9U/view?usp=sharing" rel="noopener noreferrer">Video</a>
         </div>
       </div>
 
       <div class="project-card">
         <h3 class="card-title">Rubik's Cube Solver</h3>
         <div class="card-image"><img src="images/rubiks%20cube%20solver.jpg" alt="Rubik's cube solving robot"></div>
-        <p class="card-description">A full-stack cube solving robot: a React frontend and a Node.js + Express backend compute the solution with cubejs, then send it over USB serial to an ESP32 that drives the stepper motors turning the cube.</p>
+        <p class="card-description">A Rubik's cube solving robot. 
+          The UI is built with React serving as the frontend and Node.js + Express as the backend. 
+          After inputting a scrambled cube, a solution is computed using cubejs, then sent over via UART to an ESP32. 
+          The microcontroller controls six NEMA stepper motors which manipulate the cube.</p>
         <div class="card-tags">
           <span>React</span>
           <span>Node.js</span>
@@ -74,7 +87,10 @@
       <div class="project-card">
         <h3 class="card-title">Digital Clock</h3>
         <div class="card-image"><img src="images/digital%20clock.jpg" alt="Digital clock"></div>
-        <p class="card-description">Built from plywood, 3D printed parts, and a custom designed PCB, running on an Arduino Nano. The art is inspired by Arcane and was drawn by a friend.</p>
+        <p class="card-description">A digital clock running on an Arduino Nano. 
+          The lights are formed in four separate 7-segment displays controlled by 
+          shift registers on a custom PCB I designed using KiCad.
+          The frame is built from plywood and 3D printed parts, and the art is inspired by Arcane and was drawn by a friend.</p>
         <div class="card-tags">
           <span>Arduino</span>
           <span>PCB Design</span>
